@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testapp/chats.dart';
 import 'package:testapp/group.dart';
+import 'package:testapp/login.dart';
 import 'package:testapp/up.dart';
 
 class calls extends StatelessWidget {
@@ -185,6 +186,24 @@ class calls extends StatelessWidget {
               leading: Icon(Icons.settings),
               trailing:
                   IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right)),
+              tileColor: Color(0xFFFF141B20),
+            ),ListTile(
+              title: Expanded(
+                  child: Text(
+                'Log Out',
+                style: TextStyle(fontSize: 15, color: Color(0xFFFF6E727A)),
+              )),
+              leading: Icon(Icons.mail),
+              trailing: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => login(),
+                      ),
+                    );
+                  },
+                  icon: Icon(Icons.arrow_right)),
               tileColor: Color(0xFFFF141B20),
             ),
           ],

@@ -285,6 +285,8 @@ drawer: Drawer(child: Center(child: Text('empty'))),
 import 'package:flutter/material.dart';
 import 'package:testapp/channels.dart';
 import 'package:testapp/chats.dart';
+import 'package:testapp/login.dart';
+import 'package:testapp/singup.dart';
 import 'package:testapp/up.dart';
 
 void main() {
@@ -298,7 +300,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: chats(),
+      home: login(),
     );
   }
 }
